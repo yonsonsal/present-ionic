@@ -1,0 +1,7 @@
+#DEMO 
+ionic start myMapDemo https://github.com/calendee/ionic-leafletjs-map-demo
+cd myMapDemo
+cordova plugin add cordova-plugin-geolocation
+ionic platform add ios
+ionic platform add android
+ionic serve
