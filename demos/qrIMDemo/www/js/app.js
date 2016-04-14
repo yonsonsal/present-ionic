@@ -58,7 +58,9 @@ angular.module('scanner', [
     .state('tab', {
     url: "/tab",
     abstract: true,
-    templateUrl: "templates/tabs.html"
+    templateUrl: "templates/tabs.html",
+    controller: 'HomeController as vm'
+
   })
 
   // Each tab has its own nav history stack:
@@ -68,8 +70,16 @@ angular.module('scanner', [
     url: '/home',
     views: {
       'tab-home': {
-        templateUrl: 'templates/tab-home.html',
-        controller: 'HomeController as vm'
+        templateUrl: 'templates/tab-home.html'
+      }
+    }
+  })
+
+  .state('tab.aqhp', {
+    url: '/aqhp',
+    views: {
+      'tab-aqhp': {
+        templateUrl: 'templates/tab-aqhp.html'
       }
     }
   });

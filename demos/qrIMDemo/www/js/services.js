@@ -21,7 +21,7 @@ angular.module('scanner.services', [])
 
       }
 
-    return $http.get(endPointURL + 'pasadas/'+parada+'/'+dayType+'/'+hour+':'+minutes).then(function(response){
+    return $http.get(endPointURL + 'pasadas/'+parada+'/'+dayType+'/'+hour+':'+min).then(function(response){
       return response.data;
     });
   };
